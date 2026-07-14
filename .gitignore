@@ -1,0 +1,15 @@
+.DS_Store
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Temporary build and conversion artifacts
+tmp/
+build/
+
+# Large raw replay products should stay outside this project unless explicitly curated.
+*.root
+
+# Keep curated reports and figures, but avoid accidental bulk dumps.
+output/single_pion/tmp/
+output/single_pion/cache/
