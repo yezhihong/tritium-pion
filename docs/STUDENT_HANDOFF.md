@@ -1,109 +1,109 @@
-# Tritium / MARATHON Single Pion Analysis 学生交接说明
+# Tritium / MARATHON Single Pion Analysis Handoff
 
-更新日期：2026-07-13
+Updated: 2026-07-14
 
-这份文档是给接手学生和他的 Codex 使用的入口文件。目标不是替代正式笔记，而是把当前关于 MARATHON tritium single pion production cross-section 的物理动机、已有材料、分析计划、初步结果解读和下一步工作集中在一个地方，避免重新从零梳理。
+This document is the entry point for a student or collaborator taking over the MARATHON tritium single-pion analysis. It does not replace the detailed analysis notes. Its purpose is to collect the current physics motivation, input materials, analysis plan, preliminary interpretation, and near-term tasks in one place.
 
-## 1. 接手后先读哪些文件
+## 1. Files To Read First
 
-建议按以下顺序阅读：
+Read the following files in order:
 
 1. `docs/single_pion_physics_goals.md`
-   - 物理目标和意义。
-   - 重点理解 Qiu 报告、Afanasev-Carlson 早期工作、soft/VMD、fragmentation、direct/higher-twist pion 的机制分解。
+   - Physics goals and motivation.
+   - Pay special attention to the mechanism separation among the Qiu reports, the Afanasev-Carlson work, soft/VMD sources, fragmentation, and direct or higher-twist pion production.
 
 2. `docs/single_pion_cross_section_strategy.md`
-   - 分析计划和技术路线。
-   - 重点理解哪些 MARATHON electron DIS 链条可以复用，哪些必须为 pion 重新建立。
+   - Analysis strategy and technical workflow.
+   - Focus on which parts of the MARATHON electron DIS normalization chain can be reused and which parts must be rebuilt for pion production.
 
 3. `docs/pdf/single_pion_physics_motivation_zh.pdf`
-   - 上述 physics motivation 的中文版 PDF。
+   - Earlier Chinese PDF version of the physics motivation.
 
 4. `docs/pdf/single_pion_analysis_plan_zh.pdf`
-   - 上述 analysis plan 的中文版 PDF。
+   - Earlier Chinese PDF version of the analysis plan.
 
-5. `docs/figures/pion_xs_plot1.png` 和 `docs/figures/pion_xs_plot2.png`
-   - 早期提取的 single pion cross-section 和 Wiser/model 比较图。
-   - 最终结果预计不会与这些初步结果有本质差别，后续分析应围绕系统误差、可复现性和物理解释增强。
+5. `docs/figures/pion_xs_plot1.png` and `docs/figures/pion_xs_plot2.png`
+   - Early extracted single-pion cross-section plots and Wiser/model comparisons.
+   - The final result is not expected to be qualitatively different from these preliminary plots; the main work is to improve reproducibility, systematic uncertainties, and physics interpretation.
 
 6. `analysis/`
-   - 已有分析代码入口。
-   - 特别关注 `Yield.C`、`TRI_Beam.h`、`TRI_Target.h`、`TRI_LiveTime.C`、`TRI_Tools.h`、`wiser_all_sig.f`、`yield_plot.ipynb`。
+   - Existing analysis-code entry points.
+   - In particular, inspect `Yield.C`, `TRI_Beam.h`, `TRI_Target.h`, `TRI_LiveTime.C`, `TRI_Tools.h`, `wiser_all_sig.f`, and `yield_plot.ipynb`.
 
 7. `run_lists/`
-   - H1、D2、H3、He3 各 kinematic setting 的 run list。
+   - Run lists for H1, D2, H3, and He3 at the available kinematic settings.
 
 8. `references/`
-   - 本地参考文献与报告。
-   - Qiu 报告：`references/qiu_reports/SoLID_ANL_Qiu.pdf`、`references/qiu_reports/SoLID2025July_Qiu.pdf`。
-   - Afanasev-Carlson 早期论文：`references/papers/PhysRevD.61.034014.pdf`、`references/papers/1-s2.0-S037594740301176X-main.pdf`、`references/papers/0212376v1.pdf` 等。
-   - MARATHON PRL 和 supplemental files。
+   - Local reports and papers.
+   - Qiu reports: `references/qiu_reports/SoLID_ANL_Qiu.pdf`, `references/qiu_reports/SoLID2025July_Qiu.pdf`, and `references/qiu_reports/2607.07664v1.pdf`.
+   - Afanasev-Carlson papers: `references/papers/PhysRevD.61.034014.pdf`, `references/papers/1-s2.0-S037594740301176X-main.pdf`, `references/papers/0212376v1.pdf`, and related papers.
+   - MARATHON PRL papers and supplemental files.
 
-## 2. 飞书 Wiki 页面
+## 2. Feishu Wiki Pages
 
-已把两份 Markdown 上传为真正的飞书 Wiki pages，而不是普通附件。
+Two Markdown notes have also been uploaded as Feishu Wiki pages rather than as ordinary file attachments.
 
-目标知识空间：
+Target knowledge space:
 
 - `Single Pion Production from A=3`
 
-新建页面：
+Pages:
 
-- MARATHON 单 pion 产生截面研究的物理目标与意义  
+- MARATHON single-pion production: physics goals and motivation
   https://tmeg-thu.feishu.cn/wiki/VTJ8w96vSi9BXGk9nSdcDzlynvd
 
-- MARATHON 包含式单负 pion 产生截面分析策略  
+- MARATHON inclusive single negative pion cross-section analysis strategy
   https://tmeg-thu.feishu.cn/wiki/If5twuc11i4JdSkvk9LcmN3Anad
 
-上传时已做飞书 Markdown 兼容处理：原始块公式 `$$...$$` 先转换为飞书可识别的 `<latex>...</latex>` 写入，回读验证后公式被飞书恢复为标准公式块。后续若再次用 Codex 更新飞书文档，注意不要直接把复杂 LaTeX 块、尖括号或代码片段未经检查地写入飞书 Markdown。
+When updating Feishu pages from local Markdown, display equations may need to be converted from `$$...$$` blocks into Feishu-compatible `<latex>...</latex>` blocks before upload. The GitHub Markdown files should keep standard `$$...$$` display math.
 
-## 3. 当前物理故事线
+## 3. Current Physics Story
 
-这项工作不应被定位为 MARATHON electron DIS 的副产品。更准确的定位是：
+This project should not be framed as a byproduct of the MARATHON electron DIS analysis. A more accurate framing is:
 
-MARATHON 的包含式单负 pion 数据提供了同一束流、同一 HRS、同一低温靶系统下 `H1`、`D2`、`H3`、`He3` 的绝对 pion 截面和靶比值，可用于检验 JLab 12 GeV 固定靶能区末态 pion 的产生机制。
+The MARATHON inclusive negative pion data provide absolute pion cross sections and target ratios for `H1`, `D2`, `H3`, and `He3` under the same beam, HRS, and cryogenic-target conditions. These data can test final-state pion production mechanisms in the JLab 12 GeV fixed-target regime.
 
-核心问题是：
+The core questions are:
 
-- observed leading pion 到底主要来自 struck parton fragmentation？
-- 还是有显著 soft/VMD photoproduction、vector-meson decay、direct/higher-twist isolated pion、semi-exclusive dynamics？
-- A=3 mirror nuclei 中的 `H3/He3` 比值是否显示出 isospin/nuclear dependence？
+- Does the observed leading pion mainly come from struck-parton fragmentation?
+- Are soft/VMD photoproduction, vector-meson decays, direct or higher-twist isolated pion production, or semi-exclusive dynamics significant?
+- Do the `H3/He3` mirror-nucleus ratios show measurable isospin or nuclear dependence?
 
-这个问题是 SIDIS/TMD pion observables 的前置约束。如果 single pion 截面本身不能被简单 fragmentation picture 描述，后续用 pion 数据抽取 TMD、FF 或 spin asymmetry 时就必须引入机制系统误差。
+This is a prerequisite question for SIDIS and TMD pion observables. If the inclusive single-pion cross section cannot be described by a simple fragmentation picture, then pion-based extractions of TMDs, FFs, or spin asymmetries require an explicit mechanism uncertainty.
 
-## 4. 初步图的物理解读
+## 4. Preliminary Plot Interpretation
 
-`docs/figures/pion_xs_plot1.png`：
+`docs/figures/pion_xs_plot1.png`:
 
-- 上图是早期提取的 `D2`、`H3`、`He3` single pion cross-section 随 `P_T` 的变化，并与 Wiser fit 比较。
-- 下图给出 `sigma_Wiser / sigma_Data`。
-- 主要现象：Wiser/Data 从低 `P_T` 的约 `1.5-2.2` 系统下降到高 `P_T` 的小于 1。
-- 物理含义：Wiser 在低动量端偏高，在高动量端偏低，真实数据的 `P_T` 谱比 Wiser 更硬。
-- 这不是单一 normalization factor 能解决的问题，而是模型形状或机制分解的问题。
+- The upper panel shows early extracted `D2`, `H3`, and `He3` single-pion cross sections versus `P_T`, compared with a Wiser fit.
+- The lower panel shows `sigma_Wiser / sigma_Data`.
+- The main feature is that Wiser/Data decreases from roughly `1.5-2.2` at low `P_T` to below 1 at high `P_T`.
+- This means the Wiser baseline is high at low momentum and low at high momentum; the measured `P_T` spectrum is harder than Wiser.
+- A single normalization factor cannot fix this. The issue is a shape or mechanism-composition problem.
 
-`docs/figures/pion_xs_plot2.png`：
+`docs/figures/pion_xs_plot2.png`:
 
-- 上图是早期 cross-section 与一个 model 的比较。
-- 下图是 `sigma_data / sigma_model` 随 `x_bj` 的变化。
-- 主要现象：低到中等 `x_bj` 区域模型接近数据；高 `x_bj` 区域数据/模型显著下降。
-- 物理含义：模型在 high-x 或 endpoint 区域失效，可能反映相空间、radiative smearing、acceptance/bin-centering、nuclear attenuation、FSI 或机制分解不足。
+- The upper panel compares the early cross section with a model.
+- The lower panel shows `sigma_data / sigma_model` versus `x_bj`.
+- The model is close to the data at low to intermediate `x_bj`, but data/model drops significantly at high `x_bj`.
+- This may reflect phase-space limitations, radiative smearing, acceptance/bin-centering effects, nuclear attenuation, final-state interactions, or an incomplete mechanism decomposition.
 
-稳妥表述：
+Conservative interpretation:
 
-- Wiser/model 能抓住量级，但不能完整描述 `P_T` 和 `x_bj` 依赖。
-- 数据比简单 soft empirical model 更硬，提示高 `P_T` 区域可能有 prompt fragmentation、direct/higher-twist pion 或 semi-exclusive dynamics 的贡献。
-- A=3 mirror-nuclei 比较有潜力成为轻核 pion production 的新基准，但不要在没有系统误差和背景控制前直接宣称 flavor separation。
+- Wiser/model baselines describe the rough scale but not the full `P_T` and `x_bj` dependence.
+- The data are harder in `P_T` than a simple soft empirical baseline, suggesting possible contributions from prompt fragmentation, direct/higher-twist pions, or semi-exclusive dynamics.
+- The A=3 mirror-nucleus comparison can become a new benchmark for pion production in light nuclei, but it should not be described as flavor separation before systematic uncertainties and backgrounds are controlled.
 
-## 5. 分析目标
+## 5. Analysis Goals
 
-第一阶段主结果：
+The first-stage result is:
 
 ```text
 d^2 sigma_pi- / (d p_pi d Omega_pi)
 for H1, D2, H3, He3
 ```
 
-推荐给出的比值：
+Recommended ratios:
 
 ```text
 D2 / H1
@@ -114,26 +114,26 @@ H3 / D2
 He3 / D2
 ```
 
-第一阶段应强调：
+The first stage should emphasize:
 
-- 绝对截面；
-- target ratios；
-- PID、trigger、tracking、acceptance、target normalization 的系统误差；
-- electron leakage、kaon/proton contamination、target-window background；
-- Wiser/model 只能作为 sanity check 和 soft-source baseline；
-- 第一版可报告 fiducial acceptance averaged cross section。
+- absolute cross sections;
+- target ratios;
+- PID, trigger, tracking, acceptance, and target-normalization systematics;
+- electron leakage, kaon/proton contamination, and target-window background;
+- Wiser/model comparisons only as sanity checks or soft-source baselines;
+- fiducial acceptance-averaged cross sections as the first robust result.
 
-第二阶段再讨论：
+The second stage can address:
 
-- NLO `lN -> hX` / fragmentation comparison；
-- VMD/soft、direct/higher-twist mechanism map；
-- non-prompt pion 与 vector-meson decay；
-- QCD+QED radiative smearing；
-- A=3 mirror nuclei 的 nuclear/isospin dependence。
+- NLO `lN -> hX` and fragmentation comparisons;
+- VMD/soft and direct/higher-twist mechanism maps;
+- non-prompt pion sources and vector-meson decays;
+- QCD+QED radiative smearing;
+- nuclear and isospin dependence in A=3 mirror nuclei.
 
-## 6. 分析技术路线
+## 6. Technical Analysis Route
 
-必须先建立 run database：
+The first required product is a run database:
 
 ```text
 run number
@@ -152,7 +152,7 @@ good/bad flag
 exclusion reason
 ```
 
-建议输出：
+Recommended output files:
 
 ```text
 output/single_pion/run_db.csv
@@ -160,69 +160,71 @@ output/single_pion/run_quality.csv
 output/single_pion/run_exclusions.csv
 ```
 
-分析步骤：
+Analysis sequence:
 
-1. 检查 run lists 和 ROOT/replay 文件是否完整。
-2. 确认 replay 是否已经筛掉 hadron/pion events。
-3. 确认 pion trigger bit、prescale 和 raw scaler branch。
-4. 用当前代码链复现 MARATHON electron normalized yield，验证 normalization chain。
-5. 定义 pion event sample：good track、pion trigger、GC anti-electron cut、MIP-like ECAL band、target vertex、HRS fiducial cuts。
-6. 用 cut scan 和 sideband 方法估计 PID efficiency 与 electron contamination。
-7. 计算 pion live time、trigger efficiency、tracking efficiency。
-8. 做 target normalization、dummy/window subtraction、background subtraction。
-9. 先给出 H1 absolute cross section，再推广到 D2/H3/He3。
-10. 生成 target ratios 和系统误差表。
-11. 最后做 Wiser/model comparison 与 physics interpretation。
+1. Check whether every run-list entry has a corresponding ROOT/replay file.
+2. Check whether the replay has already removed hadron or pion events.
+3. Identify the pion trigger bit, prescale, and raw scaler branch.
+4. Reproduce the MARATHON electron normalized yield with the current code to validate the normalization chain.
+5. Define the pion event sample: good track, pion trigger, GC anti-electron cut, MIP-like ECAL band, target vertex, and HRS fiducial cuts.
+6. Estimate PID efficiency and electron contamination using cut scans and sidebands.
+7. Compute pion live time, trigger efficiency, and tracking efficiency.
+8. Apply target normalization, dummy/window subtraction, and background subtraction.
+9. Produce the first H1 absolute cross section, then extend the same pipeline to D2, H3, and He3.
+10. Generate target ratios and systematic-uncertainty tables.
+11. Only then perform Wiser/model comparisons and physics interpretation.
 
-## 7. 不要踩的坑
+## 7. Main Pitfalls
 
-- 不要把结果称为 electron DIS cross section；它是末态 `pi-` 的包含式产生截面。
-- 不要直接套用 electron DIS radiative correction。
-- 不要在没有 non-prompt pion 和 electron leakage 估计前宣称验证了 fragmentation picture。
-- 不要只用 leading-twist fragmentation 解释所有高动量 pion。
-- 如果没有 coincidence electron，不能逐事件重建 `Q^2`、`x_B` 或 photon virtuality。
-- `H3/He3` 差异不能直接解释成 flavor separation；必须先控制 nuclear effect、acceptance、PID、FSI 和 charge-exchange/feed-down。
-- 如果 HRS acceptance 内 pion 谱变化快，第一版不要做过细 binning；先报告 acceptance averaged result。
+- Do not call the result an electron DIS cross section. The observable is inclusive final-state `pi-` production.
+- Do not directly apply electron DIS radiative corrections.
+- Do not claim that the data validate a fragmentation picture before estimating non-prompt pion sources and electron leakage.
+- Do not explain all high-momentum pions with leading-twist fragmentation alone.
+- Without a coincidence electron, event-by-event `Q^2`, `x_B`, or photon virtuality cannot be reconstructed.
+- `H3/He3` differences cannot be interpreted directly as flavor separation before nuclear effects, acceptance, PID, FSI, and charge-exchange/feed-down are controlled.
+- If the pion spectrum varies rapidly across the HRS acceptance, avoid overly fine binning in the first version and report an acceptance-averaged result.
 
-## 8. 给学生使用 Codex 的建议
-
-学生可以在这个 workspace 下启动 Codex，然后先给 Codex 下面这段 prompt：
+## 8. Suggested Starting Prompt For A New Codex Session
 
 ```text
-请先阅读 docs/STUDENT_HANDOFF.md、docs/single_pion_physics_goals.md、
-docs/single_pion_cross_section_strategy.md、analysis/Yield.C、
-analysis/TRI_Beam.h、analysis/TRI_Target.h、
-analysis/TRI_LiveTime.C、run_lists/*.dat。
+Please first read docs/STUDENT_HANDOFF.md,
+docs/single_pion_physics_goals.md,
+docs/single_pion_cross_section_strategy.md,
+analysis/Yield.C, analysis/TRI_Beam.h,
+analysis/TRI_Target.h, analysis/TRI_LiveTime.C,
+and run_lists/*.dat.
 
-目标是继续 MARATHON tritium single pi- production cross-section 分析。
-请先建立 run database 和 replay/data-quality 检查方案，不要直接改物理结论。
-所有结论要区分：已由数据支持、模型解释、待验证假设。
+The goal is to continue the MARATHON tritium single pi- production
+cross-section analysis. First build the run database and replay/data-quality
+check plan. Do not modify the physics interpretation before the analysis chain
+is reproducible. Separate data-supported results, model interpretations, and
+hypotheses that still require validation.
 ```
 
-如果学生要更新飞书页面，让 Codex 使用 lark-doc/lark-wiki 工作流，并注意飞书 Markdown 对公式的特殊处理：复杂块公式优先写成飞书 `<latex>...</latex>` 或先在本地生成 `.lark.md` 中间文件再上传。
+If a Feishu page must be updated, use the `lark-doc` or `lark-wiki` workflow and remember that Feishu Markdown handles display equations differently from GitHub Markdown. Complex display equations may need Feishu `<latex>...</latex>` blocks in an upload intermediate file.
 
-## 9. 建议的近期任务清单
+## 9. Near-Term Task List
 
-- [ ] 建立 `output/single_pion/run_db.csv`。
-- [ ] 检查所有 run list 对应 ROOT 文件和 replay version。
-- [ ] 确认每个 run 的 electron trigger 和 pion trigger bit。
-- [ ] 确认 prescale factors 和 raw scaler branch。
-- [ ] 复现 electron benchmark normalized yield。
-- [ ] 画出每个 target/kin 的 GC vs E/p、E/p vs momentum、vertex、trigger overlap 控制图。
-- [ ] 定义第一版 pion PID cut。
-- [ ] 估计 PID efficiency 和 electron leakage。
-- [ ] 计算 pion live time 和 trigger efficiency。
-- [ ] 先完成 H1 的第一版 cross section。
-- [ ] 推广到 D2、H3、He3。
-- [ ] 生成 target ratios 和 Wiser/model comparison plots。
-- [ ] 写出系统误差表和最终 physics interpretation。
+- [ ] Build `output/single_pion/run_db.csv`.
+- [ ] Check ROOT-file availability and replay versions for all run-list entries.
+- [ ] Identify the electron trigger and pion trigger bit for each run.
+- [ ] Read prescale factors and raw scaler branches.
+- [ ] Reproduce the electron benchmark normalized yield.
+- [ ] Produce GC vs E/p, E/p vs momentum, vertex, and trigger-overlap control plots for every target/kinematic setting.
+- [ ] Define the first pion PID cut.
+- [ ] Estimate PID efficiency and electron leakage.
+- [ ] Compute pion live time and trigger efficiency.
+- [ ] Complete the first H1 cross section.
+- [ ] Extend the same pipeline to D2, H3, and He3.
+- [ ] Generate target ratios and Wiser/model comparison plots.
+- [ ] Write the systematic-uncertainty table and final physics-interpretation note.
 
-## 10. 当前应保留的核心结论
+## 10. Core Conclusions To Preserve
 
-当前最有价值的结论不是“Wiser 不对”，而是：
+The most valuable conclusion is not simply that “Wiser is wrong.” The useful statements are:
 
-1. Wiser/model 作为经验 soft baseline 能描述大致量级，但不能同时描述 `P_T` 与 `x_bj` 形状。
-2. 数据表现出比 Wiser 更硬的 `P_T` spectrum，提示 soft/VMD 之外的机制可能重要。
-3. 高 `x_bj` 区域模型明显失效，是最有物理信息、也最需要系统误差控制的区域。
-4. A=3 mirror nuclei 提供了少见的 `H3/He3` pion production 基准，应作为 MARATHON 的独特贡献来组织结果。
-5. 最终论文或报告应把结果定位为 JLab 固定靶能区 single pion production mechanism benchmark，而不是单纯 FF 校准或 electron DIS 副产品。
+1. Wiser/model baselines describe the approximate scale but not both the `P_T` and `x_bj` shapes.
+2. The data show a harder `P_T` spectrum than Wiser, suggesting mechanisms beyond a simple soft/VMD baseline.
+3. The high-`x_bj` model failure is the region with the most physics content and the greatest need for systematic control.
+4. A=3 mirror nuclei provide a rare `H3/He3` pion-production benchmark and should be organized as a distinctive MARATHON contribution.
+5. The final paper or report should frame the result as a JLab fixed-target single-pion production mechanism benchmark, not as a simple FF calibration or electron DIS byproduct.

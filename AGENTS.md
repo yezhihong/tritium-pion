@@ -4,7 +4,7 @@
 
 This directory is an independent project for the MARATHON tritium single negative pion production cross-section analysis.
 
-Use Chinese for ordinary communication with the user. Use polished academic English only when drafting manuscript text intended for an international publication.
+Use English for project documentation intended for GitHub collaborators. Use polished academic English when drafting manuscript text intended for an international publication.
 
 ## First Files To Read
 
@@ -28,7 +28,7 @@ For code work, also inspect:
 
 - Do not call this an electron DIS cross-section analysis. The observable is inclusive final-state `pi-` production.
 - Do not directly reuse electron DIS radiative corrections for pion production without a separate justification.
-- Do not claim fragmentation dominance until non-prompt pion, soft/VMD, electron leakage, PID contamination, and model dependence are evaluated.
+- Do not claim fragmentation dominance until non-prompt pion sources, soft/VMD production, electron leakage, PID contamination, and model dependence have been evaluated.
 - Do not interpret `H3/He3` as direct flavor separation before controlling nuclear effects, acceptance, PID, final-state interactions, and charge-exchange/feed-down.
 - Distinguish data-supported results, model interpretations, and hypotheses still requiring validation.
 

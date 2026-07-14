@@ -1,34 +1,37 @@
-# MARATHON 单 pion 产生截面研究的物理目标与意义
+# Physics Goals And Motivation For MARATHON Single-Pion Production
 
-## 摘要
+## Abstract
 
-本报告根据 Jian-Wei Qiu 关于 inclusive pion / inclusive hadron production 的两个报告、Jian-Wei Qiu 与 Kazuhiro Watanabe 2026 年关于 single-inclusive hadron and jet production 的联合 QCD+QED 因子化预印本，以及 Andrei Afanasev、Carl Carlson、Christian Wahlquist 等较早关于 hard pion photo/electroproduction 的系列工作，结合 MARATHON 已发表的 A=3 深度非弹电子散射结果和后续的单强子产生、SIDIS 因子化、QED 辐射处理文献，整理从 MARATHON 数据中提取
-
-$$
-e + A \rightarrow \pi^- + X,\qquad A = ^1\mathrm{H},\, ^2\mathrm{H},\, ^3\mathrm{H},\, ^3\mathrm{He}
-$$
-
-包含式单负 pion 产生截面的物理动机。
-
-核心判断是：这项分析不应只被定位为 MARATHON 电子 DIS 分析的副产品，也不应只被定位为 pion fragmentation function 的校准数据。Qiu-Watanabe 的新工作首次在统一的 QCD+QED collinear factorization 框架下计算了不标记散射电子的高横动量单强子产生，将 lepton-initiated scattering、real-photon-initiated perturbative photoproduction、lepton distribution functions（LDFs）、PDFs 和 FFs 纳入同一 leading-power 描述。MARATHON $\pi^-$ 数据与这一 observable 的实验定义直接对应，但其初步结果覆盖的 $P_T\simeq 0.9$--$1.8\ \mathrm{GeV}$ 处在 leading-power 因子化的边界区。因此，最稳妥的定位是：用绝对截面和靶比值检验联合 QCD+QED leading-power baseline 在 JLab 低能、大 $z$、轻核环境中何时成立，并量化 soft/VMD、vector-meson decay、direct/higher-twist pion、核末态作用和其他 power corrections 造成的偏离。
-
-这里必须区分两种不同含义的 photoproduction：Qiu-Watanabe 文中的 photoproduction 是 real-photon-initiated 的微扰 partonic contribution，属于 leading-power factorization 的一部分；soft/VMD 则是光子向强子态涨落后产生 pion 的非微扰贡献。二者不能合并称为同一种机制。
-
-## 1. 从 Qiu 报告和 Qiu-Watanabe 预印本提炼出的主线
-
-Qiu 两个报告与 Qiu-Watanabe 新预印本共同形成了由物理问题到可计算 baseline 的完整主线：
-
-1. 任何含有指定末态强子的截面都包含非微扰强子化信息，不能只靠微扰 QCD 直接计算。
-2. 当前 SIDIS/TMD 解释通常默认观测到的 leading hadron 主要来自 struck parton 的 prompt fragmentation；但在 JLab 固定靶能区，这个前提并非自动成立。
-3. 对不测量散射电子的包含式单强子过程
+This note summarizes the physics motivation for extracting the inclusive single negative pion production cross section from MARATHON:
 
 $$
-\ell + N/A \rightarrow h + X
+e + A \rightarrow \pi^- + X,\qquad
+A = ^1\mathrm{H},\, ^2\mathrm{H},\, ^3\mathrm{H},\, ^3\mathrm{He}.
 $$
 
-观测 hadron 的 $P_T$ 本身提供唯一显式硬尺度。若 $P_T$ 足够大，该过程可以写成 LDF、PDF、FF 与 infrared-safe hard part 的卷积，从而系统包含 lepton-side QED radiation、普通 leptoproduction 和 perturbative photoproduction。
+The motivation is based on Jian-Wei Qiu's reports on inclusive pion and inclusive hadron production, the 2026 Qiu-Watanabe preprint on joint QCD+QED factorization for single-inclusive hadron and jet production in lepton-hadron scattering, the earlier work by Andrei Afanasev, Carl Carlson, Christian Wahlquist, and collaborators on hard pion photo/electroproduction, and the published MARATHON A=3 electron DIS results.
 
-在 leading power 下，其结构可概括为
+The central point is that this analysis should not be framed only as a byproduct of the MARATHON electron DIS program, and it should not be framed only as a pion fragmentation-function calibration. Qiu and Watanabe have provided the first joint QCD+QED collinear-factorization calculation for high-transverse-momentum single-hadron production when the scattered lepton is not tagged. Their framework combines lepton-initiated scattering, real-photon-initiated perturbative photoproduction, lepton distribution functions (LDFs), PDFs, FFs, and infrared-safe hard parts in a single leading-power baseline.
+
+The MARATHON $\pi^-$ data match the experimental definition of this observable, but the preliminary pion kinematics cover roughly $P_T \simeq 0.9$--$1.8\ \mathrm{GeV}$, which is near the lower edge of the region where leading-power factorization is expected to be reliable. The most defensible goal is therefore to use absolute cross sections and target ratios to test where the joint QCD+QED leading-power baseline works in the low-energy, large-$z$, light-nucleus JLab regime, and to quantify residual contributions from soft/VMD production, vector-meson decay, direct or higher-twist pion production, nuclear final-state effects, and other power corrections.
+
+It is essential to distinguish two meanings of photoproduction. In the Qiu-Watanabe paper, photoproduction refers to real-photon-initiated perturbative partonic channels and is part of the leading-power factorized baseline. Soft/VMD production refers to nonperturbative photon-hadron dynamics. These should not be merged into a single mechanism.
+
+## 1. Main Thread From The Qiu Reports And The Qiu-Watanabe Preprint
+
+The Qiu reports and the Qiu-Watanabe preprint establish a consistent chain from the physics question to a calculable baseline:
+
+1. Any cross section with an identified final-state hadron contains nonperturbative hadronization information and cannot be computed from perturbative QCD alone.
+2. Many SIDIS/TMD interpretations assume that the observed leading hadron mainly comes from struck-parton fragmentation. At fixed-target JLab kinematics, this assumption is not automatic.
+3. For inclusive single-hadron production without a tagged scattered lepton,
+
+$$
+\ell + N/A \rightarrow h + X,
+$$
+
+the observed hadron transverse momentum $P_T$ provides the explicit hard scale. If $P_T$ is sufficiently large, the cross section can be written as a convolution of LDFs, PDFs, FFs, and infrared-safe hard parts. This organization includes lepton-side QED radiation, ordinary leptoproduction, and perturbative photoproduction in one framework.
+
+At leading power, the structure is schematically:
 
 $$
 E_H\frac{d\sigma^{eA\rightarrow H+X}}{d^3P_H}
@@ -36,140 +39,144 @@ E_H\frac{d\sigma^{eA\rightarrow H+X}}{d^3P_H}
 \sum_{i,b,c}
 f_{i/e}\otimes f_{b/A}\otimes
 \widehat{H}_{ib\rightarrow c+X}\otimes D_{c\rightarrow H}
-+\mathcal{O}\!\left(\frac{1}{P_T^n}\right),
++\mathcal{O}\!\left(\frac{1}{P_T^n}\right).
 $$
 
-其中 $f_{i/e}$ 是电子中的 lepton、photon、quark 或 gluon distribution，$f_{b/A}$ 是靶核 PDF，$D_{c\rightarrow H}$ 是末态强子的 fragmentation function。对 MARATHON 而言，这个公式的价值不在于预先保证 factorization 成立，而在于给出一个可以被数据检验、并能与非 leading-power 机制区分的现代 baseline。
+Here $f_{i/e}$ is the distribution of a lepton, photon, quark, or gluon inside the electron; $f_{b/A}$ is the target PDF; and $D_{c\rightarrow H}$ is the fragmentation function for producing the observed hadron. For MARATHON, this equation should be treated as a testable modern baseline, not as proof that factorization must already dominate the data.
 
-在 Qiu 的表述中，single-inclusive hadron production 是 SIDIS 因子化分析的 prerequisite。新预印本把这一判断推进为可计算的联合 QCD+QED 框架。关键不是先做最复杂的角分布或 spin asymmetry，而是先回答三个基础问题：现有 FFs 与 leading-power hard parts 能否描述截面；collision-induced QED radiation 对谱形的影响有多大；剩余偏差是否需要由低 $P_T$ power corrections、soft/VMD、vector-meson decay、direct pion 或核末态作用解释。
+In Qiu's language, single-inclusive hadron production is a prerequisite for a controlled SIDIS factorization analysis. The Qiu-Watanabe work turns this statement into a calculable joint QCD+QED framework. The first questions are not angular modulations or spin asymmetries, but whether current FFs and leading-power hard parts describe the cross section, how large collision-induced QED radiation effects are, and whether remaining deviations require low-$P_T$ power corrections, soft/VMD production, vector-meson decays, direct pions, or nuclear final-state effects.
 
-## 2. Afanasev-Carlson 早期脉络：为什么中等能区的 pion 更有信息量
+## 2. The Afanasev-Carlson Context
 
-Afanasev、Carlson、Wahlquist 从 1997 年开始讨论 high transverse momentum meson photoproduction/electroproduction。他们的出发点和 Qiu 报告中的现代问题高度一致：末态 pion 不是一个“自动干净”的 partonic observable，而是多个机制叠加后的产物。只有先定量知道哪个机制占主导，才能把 pion 数据用于 PDF、FF、GPD 或 spin/TMD 物理解释。
+Afanasev, Carlson, Wahlquist, and collaborators studied high-transverse-momentum meson photo/electroproduction beginning in the late 1990s. Their starting point is directly relevant here: a final-state pion is not automatically a clean partonic observable. It can be a superposition of several mechanisms, and the dominant mechanism must be identified before the pion data can be used to infer PDFs, FFs, GPDs, or spin/TMD structure.
 
-### 2.1 三类机制，而不是单一 fragmentation
+### 2.1 More Than One Mechanism
 
-这些早期工作把 hard pion production 至少分成三类：
+The earlier work separates hard pion production into at least three categories:
 
-1. **leading-twist fragmentation**：光子或虚光子与 parton 硬散射，末态 parton 再通过 fragmentation function 产生 pion。这是现代 $\ell N\to hX$ NLO 计算和许多 SIDIS 解释默认的主机制。
-2. **soft / VMD contribution**：入射光子先涨落为 $\rho,\omega,\phi$ 等矢量介子，再通过软强子过程产生 pion。Afanasev et al. 在 Phys. Rev. D 61, 034014 中用 vector meson dominance 和半包含 hadronic cross-section 参数化估计了这部分，并指出在几十 GeV 入射能量、$p_T$ 约 2 GeV 附近，soft contribution 仍可能很大。
-3. **direct 或 higher-twist isolated pion production**：pion 在短距离硬过程中直接形成，而不是作为 jet fragmentation 的一部分。这一项在渐近高能下是 higher twist，但在中等能量、较大 $z$ 或 kinematically isolated pion 区域可以超过普通 fragmentation，因为它不受 fragmentation function 在 $z\to 1$ 处快速下降的同样惩罚。
+1. **Leading-twist fragmentation:** a photon or virtual photon scatters from a parton, and the outgoing parton produces the pion through a fragmentation function. This is the default mechanism in modern NLO $\ell N\to hX$ calculations and in many SIDIS interpretations.
+2. **Soft/VMD contribution:** the incoming photon fluctuates into vector mesons such as $\rho$, $\omega$, or $\phi$, followed by soft hadronic pion production. Afanasev et al. estimated this component with vector-meson dominance and semi-inclusive hadronic cross-section parameterizations, and found that it may remain sizable near $p_T\sim2\ \mathrm{GeV}$ at fixed-target energies.
+3. **Direct or higher-twist isolated pion production:** the pion is produced directly in a short-distance subprocess rather than as a jet-fragmentation product. This contribution is power suppressed asymptotically, but at moderate energies, large $z$, or kinematically isolated pion configurations it can exceed ordinary fragmentation because it is not penalized by the same rapid FF falloff as $z\to1$.
 
-这三类机制对 MARATHON 的意义不同。若数据主要由 fragmentation 描述，它可进入 FF/SIDIS global analysis；若 soft/VMD 占主导，它更多是 photon-hadron soft dynamics 和 non-prompt source 的基准；若 direct higher-twist 占重要比例，它会直接连接高 $x$ parton distributions、pion distribution amplitude、semi-exclusive duality，甚至与 GPD 硬核计算共享相同 perturbative kernel。
+These mechanisms imply different physics. If fragmentation dominates, the data can enter FF/SIDIS global analyses. If soft/VMD dominates, the data mainly benchmark photon-hadron soft dynamics and non-prompt pion sources. If direct higher-twist pion production is important, the data connect to high-$x$ parton distributions, pion distribution amplitudes, semi-exclusive duality, and perturbative kernels related to exclusive/GPD observables.
 
-### 2.2 中等能量机器的关键反直觉
+### 2.2 Why Medium Energies Are Interesting
 
-Afanasev 和 Carlson 在 2003 年的 *Hard Pion Electroproduction at Medium Energies* 中提出一个对 JLab 特别重要的判断：即使在中等能量机器上，也可能存在 perturbatively calculable 的 hard pion 区域，但该区域未必由 leading-twist fragmentation 主导，而可能由 higher-twist direct pion production 主导。
+In *Hard Pion Electroproduction at Medium Energies*, Afanasev and Carlson emphasized that a perturbatively calculable hard-pion region may exist at medium-energy facilities, but it need not be dominated by leading-twist fragmentation. It may instead be dominated by higher-twist direct pion production.
 
-这点对 MARATHON 很关键。若我们只用“prompt fragmentation vs non-prompt pion”二分法，会漏掉一个物理上可计算但不是 leading-twist FF 的贡献。换句话说，MARATHON $\pi^-$ 截面不只是检验 FF 的数据，也可能是在 JLab 能区检验 direct-pion mechanism、semi-exclusive duality 和高 $x$ parton dynamics 的数据。
+This is important for MARATHON. A simple “prompt fragmentation versus non-prompt pion” dichotomy would miss a calculable contribution that is not a leading-twist FF contribution. MARATHON $\pi^-$ production can therefore test more than FFs; it may probe direct-pion mechanisms, semi-exclusive duality, and high-$x$ partonic dynamics in the JLab energy range.
 
-### 2.3 虚光子条件与 soft suppression
+### 2.3 Virtuality And Soft Suppression
 
-Afanasev-Carlson 还指出，soft VMD 过程会随光子虚度增加而被压低，因为矢量介子 propagator 带来类似 $m_\rho^2/(m_\rho^2+Q^2)$ 的抑制。直接过程和 fragmentation 也会随 $Q^2$ 变化，但通常没有同样强的 VMD propagator suppression。
+Afanasev-Carlson also noted that soft VMD contributions are suppressed as photon virtuality increases, through factors similar to $m_\rho^2/(m_\rho^2+Q^2)$. Direct and fragmentation contributions also vary with $Q^2$, but not necessarily with the same strong VMD propagator suppression.
 
-这给 MARATHON 数据提供了一个清晰但受限的物理切入点：如果没有 coincidence electron，就不能逐事件重建 photon virtuality 或 missing mass；第一版应主要按 pion 的 $P_T$、实验室动量、角度和靶种类比较谱形。Qiu-Watanabe 的联合因子化框架不要求人为切割出一个小 $Q^2$ photoproduction 样本，而是在同一截面中统一包含 lepton-initiated 和 real-photon-initiated partonic channels。soft/VMD 与 direct/higher-twist 成分则应作为 leading-power baseline 之外的候选贡献，通过残差、能量依赖或模型比较约束。
+For MARATHON, this provides a useful but limited handle. Without a coincidence electron, one cannot reconstruct photon virtuality or missing mass event by event. The first analysis should compare spectra primarily as functions of pion $P_T$, laboratory momentum, angle, and target. The Qiu-Watanabe framework does not require artificially isolating a low-$Q^2$ photoproduction sample; it includes lepton-initiated and real-photon-initiated perturbative channels in the same inclusive cross section. Soft/VMD and direct/higher-twist components should be treated as candidate residuals beyond the leading-power baseline.
 
-### 2.4 早期文献留下的空白
+### 2.4 The Experimental Gap
 
-2003 年 Afanasev-Carlson 文中明确指出，当时缺少可比较的已分析数据。后续 NLO $\ell N\to hX$ 计算、QCD+QED factorization 和 Qiu 的报告把这个问题推进到了现代 factorization 语言，但 JLab 固定靶能区、绝对 $\pi^-$ 截面、轻核靶系统性的实验基准仍不充分。
+The 2003 Afanasev-Carlson work explicitly noted the lack of analyzed data suitable for comparison. Later NLO $\ell N\to hX$ calculations, QCD+QED factorization, and the Qiu reports moved the theory into a modern factorization language, but systematic fixed-target benchmarks for absolute $\pi^-$ production on light nuclei remain limited.
 
-MARATHON 的贡献就在这里：它不是重新发现 hard pion production 的想法，而是有机会用同一套高精度 HRS 和 $^1$H/$^2$H/$^3$H/$^3$He 靶，把早期理论中长期缺乏的 fixed-target single-pion benchmark 补上。
+MARATHON can fill part of this gap by using the same high-resolution HRS setup and the same $^1$H/$^2$H/$^3$H/$^3$He target system to provide a fixed-target single-pion benchmark.
 
-## 3. 为什么 single pion cross section 是关键可观测量
+## 3. Why The Single-Pion Cross Section Is The Key Observable
 
-### 3.1 检验 JLab 能区的 fragmentation picture
+### 3.1 Testing The Fragmentation Picture At JLab
 
-Hinderer、Schlegel、Vogelsang 的 NLO 计算表明，当散射 lepton 不被测量时，单强子产生 $\ell N \to hX$ 的硬尺度主要由观测强子的横动量给出；NLO correction 可能很大，quasi-real photon contribution 也可能重要。Qiu-Watanabe 进一步在 joint QCD+QED factorization 中把这些 contribution 组织为统一的 leading-power 结果：
+The NLO calculations of Hinderer, Schlegel, and Vogelsang show that when the scattered lepton is not measured, the transverse momentum of the observed hadron sets the hard scale. NLO corrections can be large, and quasi-real photon contributions can be important. Qiu-Watanabe reorganize these contributions into a joint QCD+QED leading-power result:
 
-- lepton-initiated subprocess，例如 $e q\rightarrow e q$ 及其 QCD corrections；
-- real-photon-initiated perturbative photoproduction，例如 $\gamma q\rightarrow qg$；
-- 由 LDFs 编码的、process-independent 的 leading-power QED radiation；
-- 由 PDFs 和 FFs 描述的 initial-state hadron structure 与 final-state fragmentation。
+- lepton-initiated subprocesses such as $e q\rightarrow e q$ and their QCD corrections;
+- real-photon-initiated perturbative photoproduction, such as $\gamma q\rightarrow qg$;
+- process-independent leading-power QED radiation encoded in LDFs;
+- target PDFs and final-state FFs.
 
-该框架的重要优点是无需用额外的 scattered-electron cut 人为分离所谓 direct/resolved photon contribution。但它只在 $P_T$ 足够大、power corrections 可控时构成可靠的 leading-power baseline。
+The advantage of this framework is that it avoids imposing an extra scattered-electron cut to artificially separate direct and resolved photon contributions. However, it is reliable only when $P_T$ is large enough for power corrections to be controlled.
 
-这正对应 MARATHON 的核心问题：初步 pion 截面覆盖 $P_T\simeq0.9$--$1.8\ \mathrm{GeV}$，接近 QCD factorization 的最低适用尺度。Qiu-Watanabe 的数值计算在 $P_T<m_c$ 时将演化尺度冻结在 $m_c$，并把非 leading-power contribution 写成 $\mathcal{O}(1/P_T^n)$。因此，MARATHON 不是一个可以预设 fragmentation dominance 的干净高 $P_T$ 样本，而是检验 leading-power description 向低 $P_T$ 过渡的边界数据。若 joint QCD+QED NLO baseline 无法描述数据，差异可能来自：
+This is exactly the MARATHON issue. The preliminary pion data cover $P_T\simeq0.9$--$1.8\ \mathrm{GeV}$, close to the lowest scale where QCD factorization can be used. Qiu-Watanabe freeze the evolution scale at $m_c$ when $P_T<m_c$ and write the non-leading-power terms as $\mathcal{O}(1/P_T^n)$. MARATHON is therefore not a clean high-$P_T$ sample in which fragmentation dominance can be assumed. It is a boundary dataset testing the transition of the leading-power description toward low $P_T$.
 
-- 大 $z$ pion fragmentation function 约束不足；
-- $p_T$ 或 invariant mass 不够大，leading-power approximation 失效；
-- $\rho$、$\omega$ 等 vector meson 衰变产生的 non-prompt pion 没有扣除；
-- 默认 LDFs 或 lepton-side QED radiation 的处理不充分；
-- perturbative photoproduction 与 leptoproduction 的相对贡献估计不准；
-- 轻核靶中的 nuclear dependence 或 final-state interaction 改变了 pion 产额。
+If the joint QCD+QED NLO baseline fails, possible causes include:
 
-因此，绝对截面本身就是物理结果，而不是只为后续 SIDIS 分析服务的技术校准。
+- insufficient constraints on large-$z$ pion FFs;
+- $p_T$ or invariant mass too low for leading-power factorization;
+- non-prompt pion sources from $\rho$, $\omega$, or other vector-meson decays;
+- incomplete treatment of default LDFs or lepton-side QED radiation;
+- incorrect balance between perturbative photoproduction and leptoproduction channels;
+- nuclear dependence or final-state interactions in light nuclei.
 
-### 3.2 为 SIDIS/TMD 提供可控前提
+The absolute cross section is therefore a physics result in its own right, not merely a technical calibration for later SIDIS work.
 
-SIDIS 的目标通常是利用
+### 3.2 Providing A Controlled Input To SIDIS/TMD Studies
+
+SIDIS usually studies:
 
 $$
 e + N \rightarrow e' + h + X
 $$
 
-中的二维尺度结构来抽取 TMDs、fragmentation functions 和 angular modulations。TMD factorization 要求硬尺度 $Q$ 足够大，同时末态强子的横动量相对 $Q$ 较小；观测到的 hadron 还应是 fragmenting parton 的 leading hadron。
+to extract TMDs, FFs, and angular modulations. TMD factorization requires a hard scale $Q$ and a final-state hadron transverse momentum small relative to $Q$. It also typically assumes that the observed hadron is the leading hadron from a fragmenting parton.
 
-Qiu 报告强调，在 JLab kinematics 下这一点“unlikely to be satisfied”是需要严肃检查的风险，而不是可以忽略的细节。包含式单 pion 截面可以在不引入 SIDIS 全部角分布复杂性的情况下，先检验：
+Qiu's reports emphasize that this assumption is “unlikely to be satisfied” automatically at JLab kinematics. Inclusive single-pion production provides a simpler prerequisite test:
 
-- 当前 pion FFs 是否能描述 JLab 12 GeV 能区；
-- 需要多大的 non-prompt pion subtraction；
-- 现有 radiative correction 或 QED factorization 处理是否会改变截面解释；
-- 用这些 pion 数据解释 SIDIS angular modulation 时，理论系统误差应如何设定。
+- Can current pion FFs describe the JLab 12 GeV regime?
+- How large is the required non-prompt pion subtraction?
+- Do radiative corrections or QED factorization effects alter the cross-section interpretation?
+- What theory systematics should be assigned when pion data are used in SIDIS angular-modulation analyses?
 
-### 3.3 约束大 $z$ pion fragmentation functions
+### 3.3 Large-$z$ Pion Fragmentation Functions
 
-Qiu-Watanabe 新预印本定量说明，single-inclusive high-$P_T$ hadron production 对大 $z$ FF 特别敏感：PDF 在 $x\rightarrow1$ 时下降通常比 FF 随 $z$ 的下降更快，使卷积偏向较小 $x$、较大 $z$ 的区域；在固定碰撞能量下，$P_T$ 越高，这种 large-$z$ dominance 越强。论文还显示，JAM20 与 MAP1.0 pion FF central sets 的差异可显著改变预测的 $P_T$ 谱，而且 FF-set uncertainty 可以大于常规 factorization/renormalization scale variation。
+Qiu-Watanabe show that single-inclusive high-$P_T$ hadron production is especially sensitive to large-$z$ FFs. In the convolution, PDFs usually fall more steeply as $x\to1$ than FFs do with $z$, biasing the result toward lower $x$ and higher $z$. At fixed collision energy, this large-$z$ dominance strengthens as $P_T$ increases. They also show that JAM20 and MAP1.0 pion FF central sets can produce significantly different $P_T$ spectra, with FF-set uncertainty exceeding ordinary factorization/renormalization scale variation in some regions.
 
-JLab 固定靶实验中，高动量 forward pion 因此对大 $z$ FFs、尤其是 $\pi^-$ 相关 favored/unfavored fragmentation 具有潜在约束力。但 MARATHON 的 $P_T$ 较低，large-$z$ sensitivity 与 power corrections 同时增强；不能把二者混为单纯的 FF uncertainty。
+Forward high-momentum pions at JLab can therefore provide complementary constraints on large-$z$ pion FFs, especially for $\pi^-$ favored and unfavored fragmentation. However, MARATHON's low-$P_T$ region enhances both large-$z$ sensitivity and power corrections, so these effects must not be interpreted as a pure FF uncertainty.
 
-这类约束与 $e^+e^-$ 数据互补：$e^+e^-$ 对 flavor 组合和大 $z$ 区的约束有限，而 lepton-nucleon 固定靶数据含有 PDF 与 FF 的卷积，对 flavor、target 和 nuclear dependence 更敏感。第一阶段不应过度宣称可直接抽取 FF；更稳妥的目标是给出能被 FF global analysis 使用的绝对截面和协方差。
+The first-stage goal should not be a direct FF extraction. A more defensible goal is to publish absolute cross sections and covariance information in a form useful for future FF global analyses.
 
-### 3.4 检验 leading-power QED radiation 与 LDFs
+### 3.4 Leading-Power QED Radiation And LDFs
 
-Qiu-Watanabe 将 collision-induced QED contribution 分为三类：由 LDFs、PDFs 和 FFs 吸收的 universal leading-power contribution；进入 hard coefficients 的 process-dependent 但 perturbatively calculable contribution；以及可能不可因子化的 power-suppressed contribution。其数值结果表明，LDF evolution 会降低 parent electron 在 $\xi\rightarrow1$ 区域的概率、增加较低 $\xi$ 的 electron/photon content，从而改变 single-hadron $P_T$ 谱。根据碰撞能量和相空间，这种谱形变化可以达到约 $50\%$ 或更大。
+Qiu-Watanabe separate collision-induced QED effects into: universal leading-power contributions absorbed into LDFs, PDFs, and FFs; process-dependent but perturbatively calculable hard-coefficient contributions; and potentially non-factorizable power-suppressed terms. Their numerical results show that LDF evolution reduces the probability of finding the parent electron near $\xi\to1$ and increases the lower-$\xi$ electron/photon content, reshaping the single-hadron $P_T$ spectrum. Depending on energy and phase space, the effect can reach roughly $50\%$ or more.
 
-这一结果使 radiative effect 从“低优先级小修正”上升为 MARATHON pion analysis 的核心理论问题。但需要保留两个限制：论文当前使用的是在 $\mu_0=m_c$ 设定的 default/model LDFs，而非由数据提取的最终 universal LDFs；作者还指出，已经施加传统 radiative correction 的 published data 不能在不移除原修正的情况下直接用于 LDF extraction。因此，MARATHON 必须记录 pion 数据产品是否以及如何施加过 radiative treatment，并比较定义一致的 detector-level、Born-like 或 factorized theory observable。
+This elevates radiative effects from a low-priority correction to a core theory issue for MARATHON pion production. Two limitations must be kept explicit: the current paper uses default/model LDFs at $\mu_0=m_c$, not final data-extracted universal LDFs; and published data that have already received traditional radiative corrections cannot be used directly for LDF extraction unless those corrections are removed or consistently accounted for. MARATHON must therefore document whether and how pion data products have received radiative treatment, and compare detector-level, Born-like, and factorized-theory observables only when the definitions match.
 
-## 4. MARATHON 数据的独特价值
+## 4. The Unique Value Of MARATHON Data
 
-MARATHON 已发表电子 DIS 结果展示了该实验在 A=3 镜像核上的归一化、靶系统和 HRS 分析能力。其 $F_2^n/F_2^p$ 测量利用 $^3$H 与 $^3$He 镜像对称性降低理论不确定性，覆盖 $0.19<x<0.83$；A=3 EMC 结果覆盖 $0.20<x<0.83$、$Q^2=2.7$ 到 $11.9\ \mathrm{GeV}^2$，并给出了首个 tritium EMC effect 测量。
+The published MARATHON electron DIS results demonstrate the experiment's ability to control normalization, cryogenic targets, and HRS analysis for A=3 mirror nuclei. The $F_2^n/F_2^p$ measurement used $^3$H/$^3$He mirror symmetry to reduce theory uncertainties over $0.19<x<0.83$. The A=3 EMC measurement covered $0.20<x<0.83$ and $Q^2=2.7$ to $11.9\ \mathrm{GeV}^2$, providing the first tritium EMC-effect measurement.
 
-对 single pion production，这套数据的独特性在于：
+For single-pion production, the unique features are:
 
-- 同一实验条件下同时有 $^1$H、$^2$H、$^3$H、$^3$He 靶；
-- HRS 提供高分辨率动量和角度测量，适合绝对截面提取；
-- MARATHON 电子 DIS 分析已建立 beam charge、target density、boiling correction、live time、acceptance 和 run quality 的归一化框架；
-- $^3$H 与 $^3$He 的 mirror nuclei 组合可用于研究轻核中 pion 产生的 isospin、initial-state nuclear modification 与 final-state interaction 的综合效应；
-- $^1$H 和 $^2$H 可作为基准，用于先检验 nucleon-level leading-power baseline，再识别 A=3 中额外的 nuclear modifications。
+- simultaneous $^1$H, $^2$H, $^3$H, and $^3$He targets under the same experimental conditions;
+- high-resolution HRS momentum and angular measurements suitable for absolute cross sections;
+- an existing beam charge, target density, boiling correction, live time, acceptance, and run-quality normalization framework;
+- an A=3 mirror-nucleus pair sensitive to the combined effects of isospin, initial-state nuclear modification, and final-state interactions;
+- $^1$H and $^2$H baselines for separating nucleon-level mechanisms from A=3 nuclear modifications.
 
-因此，MARATHON pion 分析的目标不只是给出某个靶的单点截面，而是建立一组可比较的 A=1,2,3 截面和比值。
+The goal is not a single-target cross-section point, but a coherent A=1,2,3 set of cross sections and ratios.
 
-## 5. 推荐物理目标
+## 5. Recommended Physics Goals
 
-### 目标 1：提取绝对 $\pi^-$ 包含式截面
+### Goal 1: Extract Absolute Inclusive $\pi^-$ Cross Sections
 
-基础结果应定义为
+The basic result should be:
 
 $$
 \frac{d^2\sigma_{\pi^-}}{dp_{\pi}\,d\Omega_{\pi}}
 =
 \frac{N_{\pi^-}^{\mathrm{corr}}}
-{N_e\,N_{\mathrm{tgt}}\,\Delta p\,\Delta\Omega},
+{N_e\,N_{\mathrm{tgt}}\,\Delta p\,\Delta\Omega}.
 $$
 
-分别给出 $^1$H、$^2$H、$^3$H、$^3$He 在各 MARATHON kinematic setting 下的结果。第一阶段建议报告 fiducial acceptance averaged cross section；只有在 Monte Carlo acceptance 和 bin-centering correction 稳定后，再发布更细 bin 的截面。
+Report this for $^1$H, $^2$H, $^3$H, and $^3$He at the MARATHON kinematic settings. The first stage should report fiducial acceptance-averaged cross sections. Finer binning should wait until Monte Carlo acceptance and bin-centering corrections are stable.
 
-### 目标 2：建立 target ratios，降低共同系统误差
+### Goal 2: Build Target Ratios
 
-建议重点给出：
+Key ratios include:
 
 $$
-R_{D/H} = \frac{\sigma_{\pi^-}(^2\mathrm{H})}{\sigma_{\pi^-}(^1\mathrm{H})},
-\quad
-R_{t/h} = \frac{\sigma_{\pi^-}(^3\mathrm{H})}{\sigma_{\pi^-}(^3\mathrm{He})},
+R_{D/H} =
+\frac{\sigma_{\pi^-}(^2\mathrm{H})}{\sigma_{\pi^-}(^1\mathrm{H})},
+\qquad
+R_{t/h} =
+\frac{\sigma_{\pi^-}(^3\mathrm{H})}{\sigma_{\pi^-}(^3\mathrm{He})}.
 $$
 
-以及
+Also useful are:
 
 $$
 \frac{\sigma_{\pi^-}(^3\mathrm{H})}{\sigma_{\pi^-}(^2\mathrm{H})},
@@ -177,166 +184,166 @@ $$
 \frac{\sigma_{\pi^-}(^3\mathrm{He})}{\sigma_{\pi^-}(^2\mathrm{H})}.
 $$
 
-这些比值在 beam charge、部分 acceptance 和 detector efficiency 上有共同误差抵消，更适合讨论 nuclear/isospin dependence。Qiu-Watanabe 指出，在 $P_T$ 足够大的 leading-power 极限，lepton-nucleus single-hadron production 可以通过以 nPDF 替换 free-nucleon PDF 来描述 initial-state nuclear effects；但 power corrections 可能随核尺寸增强，并且还可能存在额外的 final-state nuclear effects。其数值核结果主要针对 EIC 能量、$^4$He 及更重核，不是对 MARATHON $^3$H/$^3$He 的直接预测。因此，$^3$H/$^3$He 比值应首先作为 A=3 pion-production 镜像核基准，而不是直接解释为 nPDF 或 flavor separation。
+These ratios cancel common uncertainties in beam charge, parts of acceptance, and detector efficiencies, making them better suited for nuclear/isospin studies. Qiu-Watanabe note that leading-power nuclear effects can be modeled by replacing free-nucleon PDFs with nPDFs when $P_T$ is large enough, but power corrections may be nuclear enhanced and final-state effects may be additional. Their nuclear plots mostly address EIC energies and $^4$He or heavier nuclei, so they are not direct predictions for MARATHON $^3$H/$^3$He. The A=3 ratio should first be treated as a mirror-nucleus pion-production benchmark, not as a direct nPDF or flavor-separation measurement.
 
-### 目标 3：检验 leading-power baseline 并诊断额外机制
+### Goal 3: Test The Leading-Power Baseline And Diagnose Residual Mechanisms
 
-对 $^1$H 和 $^2$H，应优先建立 nucleon-level baseline，而不是直接把所有差异解释为 nuclear effect。比较对象应分层组织：
+For $^1$H and $^2$H, first establish the nucleon-level baseline before attributing discrepancies to nuclear effects. Comparisons should be layered:
 
-- **leading-power baseline**：joint QCD+QED factorization 下的 NLO $\ell N\to hX$，包括 lepton-initiated 和 real-photon-initiated perturbative channels、LDFs、PDFs 与 FFs；
-- **empirical soft baseline**：Wiser-like 参数化；
-- **non-perturbative photon source**：soft/VMD 与 vector-meson decay；
-- **power-suppressed candidate**：direct/higher-twist isolated pion 与其他低 $P_T$ corrections；
-- **nuclear contribution**：nPDF-like initial-state modification、pion absorption、FSI、charge exchange 和 feed-down。
+- **leading-power baseline:** NLO $\ell N\to hX$ in joint QCD+QED factorization, including lepton-initiated and real-photon-initiated perturbative channels, LDFs, PDFs, and FFs;
+- **empirical soft baseline:** Wiser-like parameterizations;
+- **nonperturbative photon source:** soft/VMD production and vector-meson decay;
+- **power-suppressed candidate:** direct/higher-twist isolated pion production and other low-$P_T$ corrections;
+- **nuclear contribution:** nPDF-like initial-state modification, pion absorption, FSI, charge exchange, and feed-down.
 
-比较时要明确：
+The comparison must state clearly that:
 
-- 该过程不是普通 inclusive electron DIS；
-- 若散射电子不参与事件定义，硬尺度不能简单用 DIS 的 $Q^2$ 表述；
-- perturbative photoproduction 不等同于 soft/VMD photoproduction；
-- QED radiation、FF choice、factorization scale 和 $1/P_T^n$ corrections 都可能影响解释；
-- 数据与理论差异不能直接等同于 nuclear effect，必须先在 hydrogen/deuterium 上建立机制基准。
+- the process is not ordinary inclusive electron DIS;
+- if the scattered electron is not part of the event definition, the hard scale cannot simply be described by DIS $Q^2$;
+- perturbative photoproduction is not the same as soft/VMD photoproduction;
+- QED radiation, FF choice, factorization scale, and $1/P_T^n$ corrections all affect the interpretation;
+- data-theory differences are not automatically nuclear effects and must first be checked on hydrogen and deuterium.
 
-### 目标 4：量化 non-prompt pion 与 soft/VMD 背景
+### Goal 4: Quantify Non-Prompt Pions And Soft/VMD Backgrounds
 
-Qiu 早期报告强调，JLab 能区可能存在来自 $\rho$ decay 等 vector-meson source 的 non-prompt pions。Qiu-Watanabe 新预印本没有显式分解 prompt 与 vector-meson-decay pion；其 inclusive FF-based formula 本身也不提供实验上可直接分离的 prompt/non-prompt decomposition。因此，这一分量仍需借助 generator、identified vector-meson data、模型或数据驱动约束单独评估。若这些 pion 被当成 clean leading-fragmentation pions，会污染 SIDIS leading-hadron interpretation。
+Qiu's earlier reports emphasize that JLab kinematics may contain non-prompt pions from vector-meson sources such as $\rho$ decay. The Qiu-Watanabe preprint does not explicitly separate prompt and vector-meson-decay pions, and the inclusive FF-based formula does not by itself provide an experimental prompt/non-prompt decomposition. This component must therefore be constrained using generators, identified vector-meson data, model studies, or data-driven bounds.
 
-因此，单 pion 截面分析应把 non-prompt source 当作物理问题，而不只是探测器背景。实际分析中可先给出数据驱动上限或模型依赖估计，再逐步发展为：
+Single-pion production should treat non-prompt sources as a physics question, not merely as detector background. A practical decomposition is:
 
-- prompt fragmentation component；
-- vector-meson decay component；
-- target window / accidental / PID contamination；
-- nuclear-dependent residual contribution。
+- prompt fragmentation component;
+- vector-meson decay component;
+- target-window, accidental, and PID contamination;
+- nuclear-dependent residual contribution.
 
-### 目标 5：为 QCD+QED 因子化和 radiative effects 提供测试场
+### Goal 5: Provide A Test Of QCD+QED Factorization And Radiative Effects
 
-Liu、Melnitchouk、Qiu、Sato 的 QCD+QED factorization 工作指出，在 SIDIS 中 radiation effects 会破坏简单的 photon-nucleon frame 定义，需要更系统地处理 lepton-side radiation。Qiu-Watanabe 随后首次对 single-inclusive high-$P_T$ hadron production 给出 joint QCD+QED 数值计算，显示 LDF-induced leading-power QED radiation 可以显著重塑 hadron $P_T$ spectrum，在部分运动学下达到约 $50\%$ 或更大。
+The QCD+QED factorization work of Liu, Melnitchouk, Qiu, and Sato shows that radiation effects complicate simple photon-nucleon frame definitions in SIDIS. Qiu-Watanabe then provide the first joint QCD+QED numerical calculation for single-inclusive high-$P_T$ hadron production and find that LDF-induced leading-power QED radiation can significantly reshape the $P_T$ spectrum.
 
-MARATHON pion 截面可以作为一个实验测试：
+MARATHON pion production can test:
 
-- 传统 radiative correction 在含末态强子的过程上是否足够；
-- default LDFs 与未来从数据提取的 universal LDFs 是否能一致描述数据；
-- lepton distribution functions 的 factorized 处理是否必要；
-- 截面对 incident-energy smearing 和 photon radiation phase space 的敏感性有多大。
+- whether traditional radiative corrections are adequate when a final-state hadron is required;
+- whether default LDFs and future extracted universal LDFs can describe the data consistently;
+- whether factorized lepton distribution functions are required;
+- how sensitive the cross section is to incident-energy smearing and photon-radiation phase space.
 
-因此，radiative effect 不应再被放在低优先级。第一阶段应至少保存未被传统 electron-DIS RC 混合处理的 pion yield 定义，记录所有已施加的 radiative treatment，并把“无 QED evolution”“default LDF”“传统 RC 近似”三种理论处理的差异列入模型系统误差。只有在实验 observable 与理论定义一致后，才能进一步讨论 LDF extraction。
+Radiative effects should no longer be treated as a low-priority correction. The first-stage analysis should preserve pion-yield definitions that are not mixed with traditional electron-DIS RC assumptions, record all radiative treatments already applied, and compare no-QED-evolution, default-LDF, and traditional-RC approximations as model systematics. LDF extraction can only be discussed after the experimental observable and theory definition are made consistent.
 
-## 6. 与已有工作的关系
+## 6. Relation To Existing Work
 
-### MARATHON 已发表电子 DIS 结果提供归一化基础
+### MARATHON Electron DIS Provides The Normalization Foundation
 
-MARATHON $F_2^n/F_2^p$ PRL 结果展示了 $^3$H/$^3$He mirror nuclei 方法的价值，也给出了 cryogenic tritium target、HRS、beam charge 和 target-density normalization 的可靠基础。A=3 EMC PRL 进一步展示了同一数据集对轻核 EMC effect 的灵敏度。
+The MARATHON $F_2^n/F_2^p$ PRL result demonstrates the value of the $^3$H/$^3$He mirror-nucleus method and provides a reliable foundation for cryogenic tritium targets, HRS analysis, beam charge, and target-density normalization. The A=3 EMC PRL further demonstrates the sensitivity of the same dataset to light-nucleus EMC effects.
 
-single pion 分析应复用这些与末态粒子无关的实验归一化，但必须重新建立 $\pi^-$ trigger、PID、tracking、pion survival、electron leakage 和 hadron contamination 的修正。不能把 electron DIS radiative correction 或 electron PID 直接移植到 pion 截面。
+The pion analysis should reuse final-state-independent normalization elements, but it must rebuild $\pi^-$ trigger, PID, tracking, pion survival, electron leakage, and hadron-contamination corrections. Electron DIS radiative corrections and electron PID cannot be transplanted directly.
 
-### NLO 单强子产生理论提供比较框架
+### NLO Single-Hadron Production Provides A Comparison Framework
 
-Hinderer、Schlegel、Vogelsang 已给出 $\ell N\to hX$ 和 $\ell N\to \mathrm{jet}X$ 的 NLO 计算，指出未测散射 lepton 时，观测 hadron/jet 的 transverse momentum 扮演硬尺度角色，且 NLO correction sizable。该框架是 hydrogen/deuterium 基准比较的自然起点。
+Hinderer, Schlegel, and Vogelsang provide NLO calculations for $\ell N\to hX$ and $\ell N\to \mathrm{jet}X$. They show that when the scattered lepton is unmeasured, the observed hadron or jet transverse momentum is the hard scale, and NLO corrections can be sizable. This framework is the natural starting point for hydrogen and deuterium baseline comparisons.
 
-### Afanasev-Carlson 早期工作提供机制分解框架
+### Afanasev-Carlson Provides A Mechanism Framework
 
-Afanasev、Carlson、Wahlquist 的 1997-2003 年系列工作比后来的 NLO $\ell N\to hX$ 计算更早提出了固定靶 hard pion 的几个核心问题：soft contribution 在 $p_T\sim 2\ \mathrm{GeV}$ 仍可能显著；polarization 或 flavor-sensitive observable 会被 soft process 稀释；JLab 中等能量下可计算区域可能不是 leading-twist fragmentation，而是 direct/higher-twist isolated pion production。MARATHON 数据可把这些理论判断从“机制估计”推进到实际的绝对截面检验。
+The 1997-2003 Afanasev-Carlson-Wahlquist work identified several issues central to fixed-target hard pion production: soft contributions can remain significant near $p_T\sim2\ \mathrm{GeV}$; polarization or flavor-sensitive observables can be diluted by soft processes; and at JLab medium energies the calculable region may be dominated by direct/higher-twist isolated pion production rather than leading-twist fragmentation. MARATHON can turn these mechanism estimates into absolute cross-section tests.
 
-### QCD+QED factorization 提供 radiative interpretation
+### QCD+QED Factorization Provides A Radiative Interpretation
 
-Liu、Melnitchouk、Qiu、Sato 的工作把 QED 与 QCD radiation 放在同一 factorization 框架中，指出 SIDIS 中简单的 photon-nucleon frame 在 radiation 存在时并非良定义。Qiu-Watanabe 的 2026 年预印本进一步给出 single-inclusive hadron/jet production 的 factorization formula 和首次数值计算，在同一框架内统一描述 leptoproduction 与 perturbative photoproduction，并量化 LDF-induced leading-power QED effect、FF-set uncertainty 和 leading-power nuclear dependence。
+The QCD+QED factorization work of Liu, Melnitchouk, Qiu, and Sato places QED and QCD radiation in a common framework and shows that simple SIDIS photon-nucleon frame definitions become ambiguous when radiation is present. The Qiu-Watanabe 2026 preprint extends this program to single-inclusive hadron and jet production, unifying leptoproduction and perturbative photoproduction and quantifying LDF-induced QED effects, FF-set uncertainties, and leading-power nuclear dependence.
 
-该工作为 MARATHON 提供了自然的现代理论 baseline，但不是可以直接套用的成品曲线：论文的 JLab 示例主要是 proton 上的 $\pi^+$、$\sqrt{S}=4.84\ \mathrm{GeV}$、$y=0$；MARATHON 需要针对 $\pi^-$、实际束流能量、HRS 角度和 acceptance、以及 $^1$H/$^2$H/$^3$H/$^3$He 重新计算。论文当前 LDFs 也是 default/model set；作者说明数值代码维护在 private GitHub，可依合理学术请求获取，因此需要与作者合作、申请代码或独立实现后才能做定量比较。
+This work provides a modern theoretical baseline for MARATHON, but not a ready-made curve. Its JLab numerical example is mainly $p(e,\pi^+)X$ at $\sqrt{S}=4.84\ \mathrm{GeV}$ and $y=0$. MARATHON requires calculations for $\pi^-$, the actual beam energy, HRS angle and acceptance, and $^1$H/$^2$H/$^3$H/$^3$He. The current LDFs are default/model sets. The authors state that the numerical code is maintained in a private GitHub repository and may be obtained by reasonable academic request, so quantitative comparison requires either collaboration with the authors or an independent implementation.
 
-## 7. 研究意义
+## 7. Research Significance
 
-### 对 hadron structure
+### Hadron Structure
 
-这项测量能回答 SIDIS/TMD 分析中一个经常被隐藏的前提：观测到的 pion 是否真能被当作 fragmenting parton 的 leading hadron。若该前提在 JLab kinematics 下失败，许多 SIDIS angular modulation 的解释都需要重新评估其系统误差。若 direct/higher-twist isolated pion 占重要比例，它还会提供一个与 exclusive/GPD 硬核相连的 semi-exclusive 观测量。
+This measurement addresses a hidden assumption in many SIDIS/TMD analyses: whether the observed pion can be treated as the leading hadron from a fragmenting parton. If that assumption fails at JLab kinematics, the interpretation of SIDIS angular modulations needs a revised systematic uncertainty. If direct/higher-twist isolated pion production is important, the observable also connects to semi-exclusive processes and exclusive/GPD hard kernels.
 
-### 对 fragmentation functions
+### Fragmentation Functions
 
-高动量 $\pi^-$ 的绝对截面和靶比值可为大 $z$ pion FFs 提供补充约束。尤其是结合 $^1$H、$^2$H、$^3$H、$^3$He 后，可以检验不同 flavor/isospin 与 nuclear scenario；但在 MARATHON 的低 $P_T$ 区域，FF sensitivity 必须与 higher-twist、soft source 和 final-state nuclear effects 同时评估。
+Absolute high-momentum $\pi^-$ cross sections and target ratios can provide complementary constraints on large-$z$ pion FFs. With $^1$H, $^2$H, $^3$H, and $^3$He, the data can test flavor/isospin and nuclear scenarios. In the MARATHON low-$P_T$ region, however, FF sensitivity must be evaluated simultaneously with higher-twist effects, soft sources, and final-state nuclear effects.
 
-### 对 direct pion 与 higher-twist dynamics
+### Direct Pions And Higher-Twist Dynamics
 
-如果 MARATHON 的高动量 $\pi^-$ 数据不能由 leading-twist fragmentation 描述，却与 direct pion 或 semi-exclusive 估计更一致，这将把早期 Afanasev-Carlson 的中等能量机制图像转化为可检验的实验结论。这样的结果会对 JLab 能区如何使用 pion observables 提取高 $x$ parton distributions、pion distribution amplitude 或 GPD 相关信息产生直接影响。
+If the high-momentum $\pi^-$ data are not described by leading-twist fragmentation but are more consistent with direct-pion or semi-exclusive estimates, the result would make the Afanasev-Carlson medium-energy mechanism picture experimentally testable. It would also affect how pion observables are used to extract high-$x$ PDFs, pion distribution amplitudes, or GPD-related information at JLab.
 
-### 对轻核 QCD
+### Light-Nucleus QCD
 
-A=3 镜像核给出了一个少见机会：在同一实验条件下比较 $^3$H 与 $^3$He 中的 pion production。若 $^3$H/$^3$He pion 比值偏离简单 nucleon counting 或 isospin expectation，可能提示 nuclear dependence、final-state interaction 或 flavor-dependent fragmentation 的效应。
+The A=3 mirror nuclei provide a rare opportunity to compare pion production in $^3$H and $^3$He under the same conditions. A deviation of the $^3$H/$^3$He pion ratio from simple nucleon-counting or isospin expectations may indicate nuclear dependence, final-state interactions, or flavor-dependent fragmentation, but only after the nucleon-level baseline and analysis systematics are controlled.
 
-### 对未来 JLab / EIC 分析
+### Future JLab And EIC Analyses
 
-Qiu-Watanabe 的数值结果表明，在 EIC 和 JLab 的 single-hadron observable 中，QED radiation、large-$z$ fragmentation uncertainty 和 nuclear dependence 都可能产生显著的谱形变化。MARATHON pion 截面可作为固定靶能区的 benchmark dataset，帮助判断哪些 theoretical systematics 和 power corrections 必须进入未来 SIDIS/TMD global analysis。
+Qiu-Watanabe find that QED radiation, large-$z$ fragmentation uncertainty, and nuclear dependence can all produce significant shape changes in single-hadron observables at EIC and JLab energies. MARATHON pion cross sections can become a fixed-target benchmark dataset for deciding which theory systematics and power corrections must enter future SIDIS/TMD global analyses.
 
-## 8. MARATHON tritium single pion 数据的潜在贡献
+## 8. Potential MARATHON Contributions
 
-### 贡献 1：补上固定靶能区的绝对 $\pi^-$ 基准
+### Contribution 1: Absolute Fixed-Target $\pi^-$ Benchmarks
 
-早期 Afanasev-Carlson 文献和后续 Qiu 报告都指出，JLab 固定靶能区缺少足够系统的 single pion benchmark。MARATHON 可给出同一谱仪、同一束流、同一靶系统下的 $^1$H、$^2$H、$^3$H、$^3$He 绝对 $\pi^-$ 截面。这比单个靶或单个 setting 的产额更有价值，因为它能同时约束 normalization、mechanism shape 和 nuclear dependence。
+The earlier Afanasev-Carlson literature and the Qiu reports both point to a lack of systematic single-pion benchmarks in the JLab fixed-target regime. MARATHON can provide absolute $\pi^-$ cross sections for $^1$H, $^2$H, $^3$H, and $^3$He with one spectrometer, one beam, and one target system. This is more valuable than isolated yields because it constrains normalization, mechanism shape, and nuclear dependence at the same time.
 
-### 贡献 2：建立 baseline-residual 机制诊断图
+### Contribution 2: A Baseline-Residual Mechanism Map
 
-建议把结果组织成“baseline-residual map”而不只是截面表：先给出 joint QCD+QED leading-power baseline 及其 FF、scale、LDF uncertainty，再叠加 Wiser-like、soft/VMD、vector-meson decay 和 direct/higher-twist sensitivity bands，最后展示数据相对各 baseline 的残差。只有当一种机制在不确定度范围内稳定占优时，才使用 fragmentation dominated、soft dominated 或 direct-pion candidate 等标签。这样可以直接回答当前因子化框架在 JLab pion 数据上在哪里有效、在哪里需要额外 power corrections。
+The result should be organized as a baseline-residual map rather than only as a cross-section table. Start from the joint QCD+QED leading-power baseline with FF, scale, and LDF uncertainties; add Wiser-like, soft/VMD, vector-meson decay, and direct/higher-twist sensitivity bands; then show the data residuals relative to each baseline. Labels such as “fragmentation dominated,” “soft dominated,” or “direct-pion candidate” should be used only if one mechanism remains dominant within uncertainties.
 
-### 贡献 3：提供 A=3 mirror-nuclei pion production 基准
+### Contribution 3: A=3 Mirror-Nucleus Pion Production
 
-$^3$H 与 $^3$He 的组合是 MARATHON 的独特资产。对 $\pi^-$ 来说，$^3$H/$^3$He 比值不仅含有 isospin 信息，还可能对 nuclear absorption、final-state interaction、charge-exchange feed-down 和 target remnant fragmentation 敏感。只要先用 $^1$H/$^2$H 建立 mechanism baseline，A=3 比值就能成为轻核中 hadronization/nuclear dependence 的新基准。
+The $^3$H/$^3$He pair is a distinctive MARATHON asset. For $\pi^-$, the ratio contains not only isospin information but also sensitivity to nuclear absorption, final-state interactions, charge-exchange feed-down, and target-remnant fragmentation. Once $^1$H and $^2$H establish the mechanism baseline, the A=3 ratio can become a benchmark for light-nucleus hadronization and nuclear dependence.
 
-### 贡献 4：为未来 SIDIS/TMD 分析提供数据驱动系统误差
+### Contribution 4: Data-Driven Systematics For Future SIDIS/TMD Work
 
-如果 single pion 数据显示 non-prompt pion、VMD/soft 或 direct pion 在某些区域不可忽略，那么未来用 JLab SIDIS pion 数据抽取 TMDs、Collins/Sivers asymmetry 或 flavor-separated fragmentation 时，就必须把这些机制作为系统误差或背景项处理。MARATHON 的贡献可以是把这个系统误差从理论猜测变成实验约束。
+If non-prompt pion sources, VMD/soft production, or direct pion mechanisms are non-negligible in some regions, future JLab SIDIS pion analyses must treat them as systematic uncertainties or background components. MARATHON can turn this systematic from a theory guess into an experimental constraint.
 
-## 9. 建议的阶段性产物
+## 9. Recommended Stage Products
 
-第一阶段应聚焦可发表的实验结果：
+The first stage should focus on publishable experimental results:
 
-- $^1$H、$^2$H、$^3$H、$^3$He 的 $\pi^-$ absolute cross section；
-- target ratios：$D/H$、$^3$H/$^3$He、$^3$H/$D$、$^3$He/$D$；
-- 完整的 PID、trigger、tracking、acceptance、target normalization 系统误差表；
-- electron contamination 和 non-prompt pion contribution 的数据驱动估计或上限；
-- 每个数据产品已经施加的 radiative treatment、energy-loss correction 和 Born-level convention 的完整记录；
-- 与 Wiser-like 参数化及 joint QCD+QED NLO baseline 的第一轮比较，后者至少扫描 FF set、scale、default-LDF/no-radiation 两种选择；
-- 一张 baseline-residual map，展示数据相对 leading-power、soft empirical 和其他 candidate mechanisms 的残差，而不预先指定 dominance。
+- $\pi^-$ absolute cross sections for $^1$H, $^2$H, $^3$H, and $^3$He;
+- target ratios: $D/H$, $^3$H/$^3$He, $^3$H/$D$, and $^3$He/$D$;
+- complete PID, trigger, tracking, acceptance, and target-normalization systematic tables;
+- data-driven estimates or upper bounds for electron contamination and non-prompt pion sources;
+- a complete record of radiative treatment, energy-loss correction, and Born-level convention for every data product;
+- first comparisons with Wiser-like parameterizations and the joint QCD+QED NLO baseline, scanning FF set, scale, default LDF, and no-radiation choices;
+- a baseline-residual map showing residuals relative to leading-power, soft empirical, and other candidate mechanisms without assuming dominance in advance.
 
-第二阶段再做更强物理解释：
+The second stage can pursue stronger physics interpretation:
 
-- 针对 MARATHON $\pi^-$ 实际束流能量和 HRS acceptance 的 joint QCD+QED calculation；
-- 基于 global FF 的理论比较和 large-$z$ FF sensitivity study；
-- default LDF、传统 radiative treatment 与未来 extracted LDF 的比较；
-- prompt vs non-prompt pion 分量分解；
-- direct/higher-twist pion sensitivity study，特别是对 high-$x$ PDFs 和 pion distribution amplitude 的潜在灵敏度；
-- A=3 mirror nuclei 的 isospin/nuclear dependence 解释；
-- leading-power nuclear PDF baseline、nuclear-enhanced power correction 和 final-state nuclear effect 的分离研究；
-- 与 SIDIS/TMD 分析的系统误差传播连接。
+- a joint QCD+QED calculation for the actual MARATHON $\pi^-$ beam energy and HRS acceptance;
+- global-FF comparisons and large-$z$ FF sensitivity studies;
+- comparison of default LDFs, traditional radiative treatment, and future extracted LDFs;
+- prompt versus non-prompt pion decomposition;
+- direct/higher-twist pion sensitivity, especially to high-$x$ PDFs and pion distribution amplitudes;
+- A=3 mirror-nucleus isospin/nuclear interpretation;
+- separation of leading-power nPDF baselines, nuclear-enhanced power corrections, and final-state nuclear effects;
+- propagation of these uncertainties into SIDIS/TMD analyses.
 
-## 10. 关键风险与表述边界
+## 10. Key Risks And Wording Boundaries
 
-- 不应把该结果称为 electron DIS cross section；它是末态 $\pi^-$ 的包含式产生截面。
-- 不应直接用 MARATHON 电子 DIS radiative correction 解释 pion 截面。
-- 不应把 Qiu-Watanabe 的 perturbative photoproduction 与 soft/VMD photoproduction 混为一谈；前者属于 leading-power partonic baseline，后者是非微扰候选贡献。
-- 不应因为存在 joint QCD+QED factorization formula 就宣称 MARATHON 全部 setting 已处于可靠的 leading-power 区域；$P_T\simeq0.9$--$1.8\ \mathrm{GeV}$ 下的 $1/P_T^n$ corrections 可能很大。
-- 不应把 Qiu-Watanabe 的 $\pi^+$ proton、$y=0$ 示例曲线直接用于 MARATHON $\pi^-$；必须按实际能量、角度、acceptance 和靶重新计算。
-- 不应把 default/model LDF 当成已经由数据确定的 universal LDF，也不能把施加过传统 RC 的数据直接用于 LDF extraction。
-- 不应在没有 non-prompt pion 估计前宣称数据已经验证 fragmentation picture。
-- 不应只用 leading-twist fragmentation 解释所有高动量 pion；JLab 能区可能存在 direct/higher-twist isolated pion 和 soft/VMD contribution 的竞争。
-- 若单 pion 样本没有 coincidence electron，就不能逐事件重建 $Q^2$、$x_B$ 或 photon virtuality；direct/VMD/fragmentation 分解必须明确模型输入和由此产生的系统误差。
-- 不应把 Qiu-Watanabe 在 EIC 能量对 $^4$He 及更重核的 nPDF prediction 当成 A=3 直接预测。
-- 不应把 $^3$H/$^3$He 差异直接解释为 flavor separation；必须先控制 initial-state nuclear effect、acceptance、PID、pion absorption、FSI 和 charge-exchange/feed-down。
-- 若 HRS acceptance 内 pion 谱变化很快，第一版应报告 acceptance-averaged cross section，并明确模型依赖的 bin-centering correction。
+- Do not call this an electron DIS cross section. It is an inclusive final-state $\pi^-$ production cross section.
+- Do not directly use MARATHON electron DIS radiative corrections to interpret pion production.
+- Do not conflate Qiu-Watanabe perturbative photoproduction with soft/VMD photoproduction. The former is part of the leading-power partonic baseline; the latter is a nonperturbative candidate contribution.
+- Do not claim that all MARATHON settings are safely in the leading-power region simply because a joint QCD+QED factorization formula exists. At $P_T\simeq0.9$--$1.8\ \mathrm{GeV}$, $1/P_T^n$ corrections may be large.
+- Do not use the Qiu-Watanabe $p(e,\pi^+)X$, $y=0$ example curve directly for MARATHON $\pi^-$. The calculation must be redone for the actual energy, angle, acceptance, and targets.
+- Do not treat default/model LDFs as data-determined universal LDFs, and do not use traditionally radiatively corrected data directly for LDF extraction.
+- Do not claim that the data validate the fragmentation picture before estimating non-prompt pion sources.
+- Do not explain all high-momentum pions with leading-twist fragmentation alone. Direct/higher-twist isolated pion production and soft/VMD contributions may compete at JLab energies.
+- Without a coincidence electron, event-by-event $Q^2$, $x_B$, or photon virtuality cannot be reconstructed. Any direct/VMD/fragmentation decomposition must state its model inputs and systematic uncertainty.
+- Do not treat Qiu-Watanabe EIC-energy predictions for $^4$He and heavier nuclei as direct A=3 predictions.
+- Do not interpret $^3$H/$^3$He differences as direct flavor separation before controlling initial-state nuclear effects, acceptance, PID, pion absorption, FSI, and charge-exchange/feed-down.
+- If the pion spectrum varies rapidly within the HRS acceptance, the first version should report an acceptance-averaged cross section and state the model dependence of bin-centering corrections.
 
-## 11. 参考资料
+## 11. References
 
-本地报告：
+Local reports and papers:
 
 - Jian-Wei Qiu, `SoLID_ANL_Qiu.pdf`, *Inclusive Hadron Production and Relation to TMDs*, June 17-20, 2024.
 - Jian-Wei Qiu, `SoLID2025July_Qiu.pdf`, *Inclusive Pion Production in Lepton-Hadron Collision*, SoLID Collaboration Meeting, JLab, July 7-8, 2025.
-- J.-W. Qiu and K. Watanabe, `2607.07664v1.pdf`, *Single inclusive hadron and jet production in lepton-hadron scattering*, arXiv:2607.07664v1 [hep-ph], July 8, 2026. 当前为 v1 预印本；PDF 首页的 PTEP 年份、卷页和 DOI 是占位信息，不应作为正式出版信息引用。
+- J.-W. Qiu and K. Watanabe, `2607.07664v1.pdf`, *Single inclusive hadron and jet production in lepton-hadron scattering*, arXiv:2607.07664v1 [hep-ph], July 8, 2026. This is the v1 preprint. The PTEP year, volume, page, and DOI on the title page are placeholders and should not be cited as final publication metadata.
 - A. Afanasev, C. E. Carlson, C. Wahlquist, `PhysRevD.61.034014.pdf`, *Soft Contributions to Hard Pion Photoproduction*, Phys. Rev. D 61, 034014 (2000).
 - A. Afanasev, C. E. Carlson, `1-s2.0-S037594740301176X-main.pdf`, *Hard Pion Electroproduction at Medium Energies*, Nucl. Phys. A 721, 763c-768c (2003).
 
-已发表或公开论文：
+Published or public papers:
 
 - A. Afanasev, C. E. Carlson, C. Wahlquist, *Probing Polarized Parton Distributions with Meson Photoproduction*, Phys. Lett. B 398, 393-399 (1997). Online: https://arxiv.org/abs/hep-ph/9701215
 - A. Afanasev, C. E. Carlson, C. Wahlquist, *Measuring Polarized Gluon and Quark Distributions with Meson Photoproduction*, Phys. Rev. D 58, 054007 (1998). Online: https://arxiv.org/abs/hep-ph/9706522
 - A. Afanasev, C. E. Carlson, C. Wahlquist, *Soft Contributions to Hard Pion Photoproduction*, Phys. Rev. D 61, 034014 (2000). Online: https://arxiv.org/abs/hep-ph/9903493
-- A. Afanasev, C. E. Carlson, *Interplay of Hard and Soft Processes at JLab Energies*, arXiv:hep-ph/0212376; conference version related to *Hard Pion Electroproduction at Medium Energies*. Online: https://arxiv.org/abs/hep-ph/0212376
+- A. Afanasev, C. E. Carlson, *Interplay of Hard and Soft Processes at JLab Energies*, arXiv:hep-ph/0212376. Online: https://arxiv.org/abs/hep-ph/0212376
 - S. J. Brodsky, M. Diehl, P. Hoyer, S. Peigne, *Semi-Exclusive Processes: New Probes of Hadron Structure*, Phys. Lett. B 449, 306-312 (1999). Online: https://arxiv.org/abs/hep-ph/9812277
 - P. Eden, P. Hoyer, A. Khodjamirian, *Duality in Semi-Exclusive Processes*, JHEP 0110, 040 (2001). Online: https://arxiv.org/abs/hep-ph/0110297
 - A. Szczurek, V. Uleshchenko, J. Speth, *$\bar d-\bar u$ asymmetry and semi-inclusive production of pions in DIS*, Phys. Rev. D 63, 114005 (2001). Online: https://arxiv.org/abs/hep-ph/0009318
